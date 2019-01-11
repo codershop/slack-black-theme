@@ -98,15 +98,12 @@ if (window.location.href !== 'about:blank') {
     init(resourcePath, mainModule, !isDevMode);
 }
 
-
-
-
 // Slack Night Mood theme
 document.addEventListener("DOMContentLoaded", function() {
     // Then get its webviews
     let webviews = document.querySelectorAll(".TeamView webview");
     // Fetch our CSS in parallel ahead of time
-    const cssPath = 'https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css';
+    const cssPath = 'https://codershop.github.io/slack-night-mode/css/black.css';
     const localCssPath = 'sib.css';
     let cssPromise = fetch(cssPath).then(response => response.text());
 
